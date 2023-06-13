@@ -1,0 +1,32 @@
+.navbar {
+    font-size: large;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 0 10px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+    /* color: 2px solid black; */
+    font-size: larger;
+  }
+  

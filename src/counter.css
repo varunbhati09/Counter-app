@@ -1,0 +1,123 @@
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.counters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px; /* Adjust the max-width as per your preference */
+  width: 100%;
+  border: 10px solid #944747;
+}
+
+.counter {
+  background-color: #646464;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  width: 30%;
+}
+.counter h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.value-meter {
+  height: 20px;
+  background-color: #545454;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.value-meter div {
+  height: 100%;
+  background-color: #5cb85c;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+
+.buttons  { 
+  margin: 2%;
+  padding :2%;
+  width: 90%;
+}
+
+.buttonsOne {
+  display: flex;
+}
+
+.buttonsTwo {
+  display: flex;
+}
+
+.input-ButtonsThree {
+  width: 100%;
+}
+
+.buttons button {
+  background-color: #e6f4e7;
+  border: none;
+  border-radius: 5px;
+  padding:  25px 50px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 100%;
+  margin: 2%;
+}
+
+.buttons button:hover {
+  background-color: #63ca2b;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.add-counter {
+  margin-top: 20px;
+}
+
+.add-counter input {
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.add-counter button {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.add-counter button:hover {
+  background-color: #47944c;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .counters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .counter {
+    width: 90%;
+    flex-basis: 100%;
+  }
+}
